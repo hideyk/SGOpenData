@@ -1,0 +1,13 @@
+{
+    "initiateDownloadUrl": "https://api-open.data.gov.sg/v1/public/api/datasets/{datasetId}/initiate-download",
+    "pollDownloadUrl": "https://api-open.data.gov.sg/v1/public/api/datasets/{datasetId}/poll-download",
+    "datasets": [
+        {
+            "name": "Resident Households by Mounthly Household Income from Work1/and Type of Dwelling",
+            "id": "residentHouseholdsByMounthlyHouseholdIncome",
+            "resource_id": "d_4a02b0c381d4dbc9370cbb3f0ce255f2",
+            "type": "csv",
+            "active": true
+        }
+    ]
+}
