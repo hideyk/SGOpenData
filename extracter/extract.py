@@ -5,6 +5,7 @@ import json
 import dataclasses
 from typing import List
 import os
+from utils import gcs_client
 
 @dataclasses.dataclass
 class DataGovSgConfig:
@@ -65,18 +66,16 @@ class DataGovSgExtractor:
             f.write(r.content)
         
     def downloadDataset(self, datasetId: str, path: str):
+        print(f"Starting download for: {datasetId}")
         if not self._getInitiateDownload(datasetId):
-            print(f"Failed to initiate download on {datasetId}")
-            return
+            return f"Failed to initiate download on {datasetId}"
         
         url, err = self._getPollDownload(datasetId)
-        if err:
-            print(err)
-            return
+        if err:            
+            return err
         self._download(url, path)
         print(f"Download succesfully completed for: {datasetId}")
-
-        
+        return None
 
 
 def main():
@@ -85,7 +84,6 @@ def main():
         if not dataset['active']:
             print(f"Skipping download for: {dataset['id']}")
             continue
-        print(f"Starting download for: {dataset['id']}")
         resp = datagovsgextractor.downloadDataset(dataset['resource_id'], ".".join([dataset['id'], dataset['type']]))
 
 if __name__ == "__main__":

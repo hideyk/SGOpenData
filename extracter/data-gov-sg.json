@@ -14,28 +14,28 @@
             "id": "resaleFlatPrice2015to2016",
             "resource_id": "d_ea9ed51da2787afaf8e51f827c304208",
             "type": "csv",
-            "active": true
+            "active": false
         },
         {
             "name": "Resale Flat Prices (Based on Registration Date), From Mar 2012 to Dec 2014",
             "id": "resaleFlatPrice2012to2014",
             "resource_id": "d_2d5ff9ea31397b66239f245f57751537",
             "type": "csv",
-            "active": true
+            "active": false
         },
         {
             "name": "Resale Flat Prices (Based on Approval Date), 2000 - Feb 2012",
             "id": "resaleFlatPrice2000to2012",
             "resource_id": "d_43f493c6c50d54243cc1eab0df142d6a",
             "type": "csv",
-            "active": true
+            "active": false
         },
         {
             "name": "Resale Flat Prices (Based on Approval Date), 1990 - 1999",
             "id": "resaleFlatPrice1990to1999",
             "resource_id": "d_ebc5ab87086db484f88045b47411ebc5",
             "type": "csv",
-            "active": true
+            "active": false
         },
         {
             "name": "Resident Households by Mounthly Household Income from Work1/and Type of Dwelling",

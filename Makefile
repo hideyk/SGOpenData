@@ -1,7 +1,7 @@
 #!/usr/bin/make -fg
 
 init:
-	@terraform -chdir=terraform init -backend-config="bucket=${GOOGLE_BUCKET}"
+	@terraform -chdir=terraform init -backend-config="bucket=${BUCKET}"
 
 plan: 
 	@terraform -chdir=terraform plan -parallelism=50
